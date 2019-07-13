@@ -38,17 +38,13 @@ function areAnagrams(a, b) {
     if (firstWord.length !== secondWord.length) {
         return false;
     } else {
-        firstWord = a.split('').sort();
-        secondWord = b.split('').sort();
+        firstWord = a.split('').sort().join('');
+        secondWord = b.split('').sort().join('');
 
-        for (var i = 0; i < a.length; i++) {
-            for (var j = 0; j < b.length; j++) {
-                if (firstWord[i] === secondWord[j]) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+        if (firstWord === secondWord) {
+            return true;
+        } else {
+            return false;
         }
     }
 }
