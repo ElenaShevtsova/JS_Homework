@@ -1,0 +1,17 @@
+p {
+    display: flex;
+    margin: 5px;
+}
+.change-table-border {
+    border: 1px solid black;
+}
+.change-tr {
+    width: 50px;
+    height: 50px;
+}
+.change-td {
+    background-color: black;
+}
+.change-td-white {
+    background-color: white;
+}
