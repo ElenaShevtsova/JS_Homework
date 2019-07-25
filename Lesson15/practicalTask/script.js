@@ -39,7 +39,6 @@ window.onload = function () {
 }
 secondParagraphLinks.onclick = function (event) {
    event.preventDefault();
-   var 
    if (localStorage.getItem(event.target.innerText)) {
       return alert(event.target.innerText);
    }
